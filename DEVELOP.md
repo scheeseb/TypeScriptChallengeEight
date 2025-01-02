@@ -19,8 +19,6 @@ SO THAT I am able to comprehend and work with existing code bases.
 ## Acceptance Criteria
 
 ```md
-npm install
-npm start
 GIVEN a command-line application that accepts user input
 WHEN I am prompted to create a new vehicle or existing vehicle
 THEN I can choose between the two options
