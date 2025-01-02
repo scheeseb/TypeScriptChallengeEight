@@ -316,7 +316,7 @@ class Cli {
           type: "list",
           name: "action",
           message: "Select an action",
-          // TODO: add options to tow and wheelie
+          // Add options to tow and wheelie
           choices: [
             "Print details",
             "Start vehicle",
@@ -389,6 +389,16 @@ class Cli {
           for (let i = 0; i < this.vehicles.length; i++) {
             if (this.vehicles[i].vin === this.selectedVehicleVin) {
               this.vehicles[i].reverse();
+            }
+          }
+        } else if (answers.action === "Tow") {
+          for (let i = 0; i < this.vehicles.length; i++) {
+            const vehicle = this.vehicles[i];
+            if (
+              vehicle.vin === this.selectedVehicleVin &&
+              vehicle instanceof Truck
+            ) {
+              this.findVehicleToTow(vehicle);
             }
           }
         }
