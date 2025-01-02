@@ -7,7 +7,7 @@ class Motorbike extends Vehicle {
   // TODO: Declare properties of the Motorbike class
   // TODO: The properties should include vin, color, make, model, year, weight, top speed, and wheels
   // TODO: The types should be as follows: vin (string), color (string), make (string), model (string), year (number), weight (number), topSpeed (number), wheels (Wheel[])
-  // Declare properties of the Car class
+  // Declare properties of the Motorbike class
   vin: string;
   color: string;
   make: string;
@@ -67,7 +67,7 @@ class Motorbike extends Vehicle {
     // Call the printDetails method of the parent class, Vehicle
     super.printDetails();
 
-    // Print details of the Car class
+    // Print details of the Motorbike class
     console.log(`VIN: ${this.vin}`);
     console.log(`Color: ${this.color}`);
     console.log(`Make: ${this.make}`);
